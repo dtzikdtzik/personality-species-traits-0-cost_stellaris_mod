@@ -14,6 +14,5 @@ trait_impulsive_desc:0 "Learning from your mistakes comes easy to those who aren
 trait_integrity:0 "Integrity"
 trait_integrity_desc:0 "These people have a strong sense of responsibility and honesty. They tend to refrain from abusing their power."
 
-pop_culture_worker_bonus_workforce_mult:0 Culture Worker Job Efficiency
-pop_enforcer_bonus_workforce_mult:0 Enforcer Job Efficiency
-pop_politician_bonus_workforce_mult:0 Politician Job Efficiency
+mod_pop_culture_worker_bonus_workforce_mult:0 "Job Efficiency for Culture Workers"
+mod_pop_politician_bonus_workforce_mult:0 "Job Efficiency for Politicians"
