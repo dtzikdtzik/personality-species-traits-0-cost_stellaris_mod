@@ -1,8 +1,10 @@
-version="4.1.5"
+version="4.1.6"
 tags={
-	"Leaders"
-	"Species"
+	"Balance"
 	"Gameplay"
+	"Species"
 }
-name="0-cost_personality_traits"
+name="0-traits_organic"
+picture="traits.jpg"
 supported_version="v4.1.6"
+remote_file_id="3597026615"
