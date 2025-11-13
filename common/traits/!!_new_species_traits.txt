@@ -1,4 +1,3 @@
-#Leave at start of list
 
 ##########################################
 ## 0-COST TRAITS ## Personality-themed ##
@@ -18,7 +17,7 @@ trait_progressive = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual ethic_attraction positive organic }
-	opposites = { "trait_hive_mind" "trait_conformists" "trait_conservative" "trait_melancholy" "trait_stoic" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_conformists" "trait_conservative" "trait_melancholy" "trait_stoic" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
 	modifier = { 
 		pop_government_ethic_attraction = -0.05
 		pop_ethics_shift_speed_mult = 1
@@ -39,7 +38,7 @@ trait_conservative = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual ethic_attraction positive organic }
-	opposites = { "trait_hive_mind" "trait_deviants" "trait_progressive" "trait_melancholy" "trait_stoic" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_deviants" "trait_progressive" "trait_melancholy" "trait_stoic" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
 	modifier = { 
 		pop_government_ethic_attraction = 0.1
 		pop_ethics_shift_speed_mult = -0.5
@@ -60,7 +59,7 @@ trait_stoic = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual amenities positive organic }
-	opposites = { "trait_hive_mind" "trait_melancholy" "trait_progressive" "trait_conservative" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_melancholy" "trait_progressive" "trait_conservative" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
 	modifier = { 
 		pop_amenities_usage_mult = -0.05
 	}
@@ -80,7 +79,7 @@ trait_melancholy = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual unity happiness positive organic }
-	opposites = { "trait_hive_mind" "trait_stoic" "trait_conformists" "trait_progressive" "trait_conservative" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_stoic" "trait_conformists" "trait_progressive" "trait_conservative" "trait_ambitious" "trait_integrity" "trait_meticulous" "trait_impulsive" }
 	modifier = { 
 		influential_jobs_bonus_workforce_mult = 0.1
 		pop_happiness = -0.05
@@ -101,7 +100,7 @@ trait_ambitious = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual leader positive organic }
-	opposites = { "trait_hive_mind" "trait_progressive" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_meticulous" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_progressive" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_meticulous" "trait_impulsive" }
 	modifier = { 
 		leader_starting_age_add = -5
 	}
@@ -121,7 +120,7 @@ trait_meticulous = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual positive organic }
-	opposites = { "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_impulsive" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_impulsive" }
 	modifier = { 
 		pop_enforcer_bonus_workforce_mult = 0.1
 	}
@@ -141,7 +140,7 @@ trait_impulsive = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual leader positive organic }
-	opposites = { "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_meticulous" }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_integrity" "trait_meticulous" }
 	modifier = { 
 		species_leader_exp_gain = 0.1
 		leader_lifespan_add = -5
@@ -162,13 +161,53 @@ trait_integrity = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { individual positive organic }
-	opposites = {  "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_meticulous" "trait_impulsive"  }
+	opposites = { "trait_disciplined" "trait_educated" "trait_hive_mind" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_meticulous" "trait_impulsive"  }
 	modifier = { 
 		pop_politician_bonus_workforce_mult = 0.1
 	}
 }
 #9
-
+trait_disciplined = {
+	cost = 0
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { individual positive leader organic }
+	opposites = { "trait_hive_mind" "trait_educated" "trait_integrity" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_meticulous" "trait_impulsive" }
+	modifier = { 
+		negative_leader_traits_species = -1
+		species_leader_exp_gain = -0.1
+	}
+}
+#10
+trait_educated = {
+	cost = 0
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { individual positive leader organic }
+	opposites = { "trait_hive_mind" "trait_disciplined" "trait_integrity" "trait_progressive" "trait_ambitious" "trait_melancholy" "trait_conservative" "trait_stoic" "trait_meticulous" "trait_impulsive" }
+	modifier = { 
+		leader_starting_age_add = 15
+		leader_initial_skill = 1
+	}
+}
 ###############################
 ## traits above by P_Phoenix ##
 ###############################

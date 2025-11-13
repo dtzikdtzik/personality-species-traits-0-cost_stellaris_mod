@@ -12,5 +12,7 @@ Flavor text and icons included.
 6. Impulsive: +10% leader experience, -5 years leader lifespan
 7. Meticulous: +10% Job efficiency for enforcers
 8. Integrity: +10% Job efficiency for politicians
+9. Disciplined: -1 leader negative traits, -10% leader exp. gain
+10. Educated: +1 leader starting skill, +15 years leader starting age
 
 https://github.com/dtzikdtzik/personality-species-traits-0-cost_stellaris_mod.git

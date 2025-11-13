@@ -6,5 +6,5 @@ tags={
 }
 name="0-traits_organic"
 picture="traits.jpg"
-supported_version="v4.1.6"
+supported_version="v4.1.7"
 remote_file_id="3597026615"
